@@ -9,6 +9,31 @@
 <body>
 
 <%= yield %>
+	<div data-ng-app="CruiseApp">
+		<h1>Choose Your Sailings<span>(Pick one for eac box)</span></h1>
+		<div ng-repeat="cruise in cruises">
+
+			<div>{{sailing_main_image}}</div>
+			<div>{{cruise.sailings.sailing_options.sailling_price}}</div>
+			<div>{{cruise.cruise_line_name}}</div>
+			<div>{{cruise.cruise_ship_name}}</div>
+			<div>{{cruise.sailings.sailing_name}}</div>
+			<div ng-repeat="sails in sailings">
+				<div>{{sail.sailling_price}}<div/> 
+				<div>{{sail.sailing_date}}</div>
+			</div>
+		</div>
+
+		<div>Your Selected Sailings Total</div>
+		<div>@total</div>
+	</div>
 
 </body>
 </html>
+
+# $scope.cruise_line_name
+# $scope.cruise_ship_name
+# $scope.sailings.sailing_name
+# $scope.sailings.sailing_main_image
+# $scope.sailings.sailing_options.sailling_prise
+# $scope.sailings.sailing_options.sailing_date

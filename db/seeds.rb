@@ -5,3 +5,27 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+require 'json'
+
+
+
+records = JSON.parse(File.read('db/cruisedata.json'))
+records.each do |record|
+  Cruiseline.create!(record)
+end
+
+
+records = JSON.parse(File.read('db/sailingdata.json'))
+records.each do |record|
+  Sailing.create!(record)
+end
+
+
+records = JSON.parse(File.read('db/sailing_options_data.json'))
+records.each do |record|
+  SailingOption.create!(record)
+end
+
+

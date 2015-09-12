@@ -1,0 +1,25 @@
+[
+{
+	"id":"60",
+	"sailing_name":"Bahamas Cruise",
+	"sailing_cruiseline_id":"5",
+	"sailing_main_image":"http://i.imgur.com/xCLiMOj.jpg"
+	
+},
+
+{
+	"id":"65",
+	"sailing_name":"Jamaica Cruise",
+	"sailing_cruiseline_id":"8",
+	"sailing_main_image":"http://i.imgur.com/4V0D6IK.jpg"
+	
+},
+
+{
+	"id":"70",
+	"sailing_name":"Mexico Cruise",
+	"sailing_cruiseline_id":"1",
+	"sailing_main_image":"http://i.imgur.com/a82YKej.jpg"
+	
+}
+]
