@@ -1,0 +1,19 @@
+
+
+
+
+
+app.service("CruiselineService", ->
+	return <%= @cruiselines.to_json.html_safe %>
+
+)
+app.service("SailngService", ->
+	return <%= @sailings.to_json.html_safe %>
+
+)
+app.service("SailingOptionService", ->
+	return <%= @sailing_options.to_json.html_safe %>
+
+)
+
+

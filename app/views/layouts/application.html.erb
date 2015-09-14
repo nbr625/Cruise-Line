@@ -2,31 +2,13 @@
 <html>
 <head>
   <title>CruiseLine</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+ 
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
-	<div data-ng-app="CruiseApp">
-		<h1>Choose Your Sailings<span>(Pick one for eac box)</span></h1>
-		<div ng-repeat="cruise in cruises">
 
-			<div>{{sailing_main_image}}</div>
-			<div>{{cruise.sailings.sailing_options.sailling_price}}</div>
-			<div>{{cruise.cruise_line_name}}</div>
-			<div>{{cruise.cruise_ship_name}}</div>
-			<div>{{cruise.sailings.sailing_name}}</div>
-			<div ng-repeat="sails in sailings">
-				<div>{{sail.sailling_price}}<div/> 
-				<div>{{sail.sailing_date}}</div>
-			</div>
-		</div>
-
-		<div>Your Selected Sailings Total</div>
-		<div>@total</div>
-	</div>
 
 </body>
 </html>

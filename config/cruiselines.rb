@@ -1,14 +1,9 @@
 Rails.application.routes.draw do
   root to: "cruiselines#index"
 
-  namespace :api do
-    resources :cruiselines, defaults: {format: :json}
-    
-  end
-
-  
-  
-
+  resources :cruiselines
+  resources :sailings
+  resources :sailing_options
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
